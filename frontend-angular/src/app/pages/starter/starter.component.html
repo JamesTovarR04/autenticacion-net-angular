@@ -1,0 +1,22 @@
+<!-- ============================================================== -->
+<!-- Simple four boxes Row -->
+<!-- ============================================================== -->
+<mat-card class="cardWithShadow">
+  <mat-card-content>
+    <mat-card-title>Weather Forecast</mat-card-title>
+    <mat-card-content>
+      <div class="row">
+        <div class="col-md-3" *ngFor="let weatherForecast of weatherForecasts">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ weatherForecast.date }}</h5>
+              <p class="card-text">{{ weatherForecast.temperatureC }} °C</p>
+              <p class="card-text">{{ weatherForecast.temperatureF }} °F</p>
+              <p class="card-text">{{ weatherForecast.summary }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card-content>
+</mat-card>
